@@ -14,8 +14,6 @@ import javafx.scene.paint.Color;
  * @author kedar
  */
 public class Vez extends Figurka{
-    @SuppressWarnings("unused")
-	private boolean hasMoved = false;
     
     public Vez(Color b) {
         super(b);
@@ -81,7 +79,7 @@ public class Vez extends Figurka{
     
     
     public void move() {
-		hasMoved = true;
+		
 	}
         public void hideMove() {
 

@@ -8,6 +8,7 @@ package hraci_deska;
 
 import java.util.ArrayList;
 import sachy.Sachy;
+import sachy.Output;
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -39,12 +40,14 @@ public class Policka extends Group {
 				Figurka p = aktivni.figurka;
 				if (this.figurka instanceof Kral) {
 					if (this.figurka.getColor() == Color.WHITE) {
-						Sachy.Prohra();
-						System.out.println("Vyhral Cerny");
+						Sachy.VyhraCerny();
+                                                Output.ulozOutput("Vyhral Cerny "+"Pocet Kol: "+ String.valueOf(PocitadloKol));
+						System.out.println("Vyhral Cerny"+ " Pocet Kol: "+ PocitadloKol);
 					}
 					if (this.figurka.getColor() == Color.BLACK) {
 						Sachy.Vyhra();
-						System.out.println("Vyhral Bily    "+ Policka.PocitadloKol + " Pocet Kol!");
+                                                Output.ulozOutput("Vyhral Bily "+"Pocet Kol: "+ String.valueOf(PocitadloKol));
+						System.out.println("Vyhral Bily  "+ " Pocet Kol: "+ PocitadloKol);
 					}
 					return;
 				}

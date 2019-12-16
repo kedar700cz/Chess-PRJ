@@ -19,7 +19,7 @@ public class Kral extends Figurka {
     }
    public void UkazPohyby(int x, int y) {
 
-		// Left
+		// Vlevo
 		for (int i = 1; i < 2; i++) {
 			if (x - i < 0) {
 				break;
@@ -33,7 +33,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Right
+		// Vpravo
 		for (int i = 1; i < 2; i++) {
 			if (x + i > 7) {
 				break;
@@ -47,7 +47,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Up
+		// Nahoru
 		for (int i = 1; i < 2; i++) {
 			if (y - i < 0) {
 				break;
@@ -61,7 +61,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Down
+		// Dolu
 		for (int i = 1; i < 2; i++) {
 			if (y + i > 7) {
 				break;
@@ -75,7 +75,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Up Left
+		// Nahoru doleva
 		for (int i = 1; i < 2; i++) {
 			if (x - i < 0 || y - i < 0) {
 				break;
@@ -89,7 +89,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Up Right
+		// Nahoru doprava
 		for (int i = 1; i < 2; i++) {
 			if (x + i > 7 || y - i < 0) {
 				break;
@@ -103,7 +103,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Down Left
+		// Dolu doleva
 		for (int i = 1; i < 2; i++) {
 			if (x + i > 7 || y + i > 7) {
 				break;
@@ -117,7 +117,7 @@ public class Kral extends Figurka {
 			}
 		}
 
-		// Down Right
+		// Dolu doprava
 		for (int i = 1; i < 2; i++) {
 			if (x - i < 0 || y + i > 7) {
 				break;

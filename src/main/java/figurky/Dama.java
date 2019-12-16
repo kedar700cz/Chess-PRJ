@@ -21,8 +21,9 @@ public class Dama extends Figurka{
     public Dama(Color b){
         super(b);
     }
+    @Override
     public void UkazPohyby(int x, int y){
-        //left
+        //Vlevo
         for(int i= 1; i<8 ; i++){
             if(x-i <0){
                 break;
@@ -35,7 +36,7 @@ public class Dama extends Figurka{
                 break;
             }
         }
-        /////// right
+        /////// Vpravo
         for(int i= 1; i<8 ; i++){
             if(x+i >7){
                 break;
@@ -48,7 +49,7 @@ public class Dama extends Figurka{
                 break;
             }
         }
-        
+        ////NAHORU
         for(int i= 1; i<8 ; i++){
             if(y-i >0){
                 break;
@@ -62,7 +63,7 @@ public class Dama extends Figurka{
             }
         }
                     
-
+        ///DOLU
         for(int i= 1; i<8 ; i++){
             if(y+i >7){
                 break;
@@ -75,6 +76,7 @@ public class Dama extends Figurka{
                 break;
             }
         }
+        //Nahoru Vlevo
         for (int i = 1; i < 8; i++) {
 			if (x - i < 0 || y - i < 0) {
 				break;
@@ -88,7 +90,7 @@ public class Dama extends Figurka{
 			}
 		}
 
-        // Up Right
+        // Nahoru Vpravo
 		for (int i = 1; i < 8; i++) {
 			if (x + i > 7 || y - i < 0) {
 				break;
@@ -102,7 +104,7 @@ public class Dama extends Figurka{
 			}
 		}
 
-		// Down Left
+		// Dolu Vlevo
 		for (int i = 1; i < 8; i++) {
 			if (x + i > 7 || y + i > 7) {
 				break;
@@ -116,7 +118,7 @@ public class Dama extends Figurka{
 			}
 		}
 
-		// Down Right
+		// Dolu vpravo
 		for (int i = 1; i < 8; i++) {
 			if (x - i < 0 || y + i > 7) {
 				break;
@@ -129,6 +131,9 @@ public class Dama extends Figurka{
 				break;
 			}
 		}
+                
+                
+                
 	}
 
 	public void hideMove() {

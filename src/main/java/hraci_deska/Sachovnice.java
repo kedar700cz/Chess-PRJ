@@ -33,6 +33,7 @@ public class Sachovnice extends Group{
                             }
                         
                             Policka p = new Policka(pozadi);
+                            ///Da X a Y souradnici Policku
                             p.setTranslateX(sloupec * Policka.VELIKOST);
                             p.setTranslateY(radek * Policka.VELIKOST);
                             this.getChildren().add(p);

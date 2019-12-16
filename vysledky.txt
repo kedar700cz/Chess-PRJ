@@ -1,0 +1,10 @@
+Vyhral Cerny 23:Pocet Kol
+Vyhral Bily 8:Pocet Kol
+Vyhral Cerny 12:Pocet Kol
+Vyhral Bily 10:Pocet Kol
+Vyhral Bily 15:Pocet Kol
+Vyhral Bily 8:Pocet Kol
+Vyhral Cerny 24:Pocet Kol
+Vyhral Bily 18:Pocet Kol
+Vyhral Bily Pocet Kol: 8
+Vyhral Cerny Pocet Kol: 137
